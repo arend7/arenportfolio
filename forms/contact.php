@@ -1,11 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Get the form fields and remove whitespace
-    $name = strip_tags(trim($_POST["name"]));
+    $name = strip_tags(trim($_GET["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $subject = trim($_POST["subject"]);
-    $message = trim($_POST["message"]);
+    $email = filter_var(trim($_GET["email"]), FILTER_SANITIZE_EMAIL);
+    $subject = trim($_GET["subject"]);
+    $message = trim($_GET["message"]);
 
     // Check that data was submitted to the mailer
     if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
