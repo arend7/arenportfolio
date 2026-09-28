@@ -24,6 +24,51 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+<style>
+    /* ORCID icon */
+    .social-links a.orcid {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 40px !important;
+      height: 40px !important;
+      padding: 0 !important;
+      margin: 0 3px !important;
+      border: 0 !important;
+      border-radius: 50% !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      line-height: 0 !important;
+      vertical-align: middle !important;
+      overflow: visible !important;
+    }
+
+    .social-links a.orcid::before,
+    .social-links a.orcid::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    .social-links a.orcid .orcid-logo {
+      display: block !important;
+      width: 34px !important;
+      height: 34px !important;
+      min-width: 34px !important;
+      min-height: 34px !important;
+      max-width: 34px !important;
+      max-height: 34px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border-radius: 50% !important;
+      background: transparent !important;
+      transform: none !important;
+    }
+
+    .social-links a.orcid:hover .orcid-logo {
+      transform: scale(1.05) !important;
+      transition: transform 0.2s ease !important;
+    }
+  </style>
 </head>
 <body>
   <!-- ======= Mobile nav toggle button ======= -->
@@ -39,6 +84,22 @@
           <a href="https://scholar.google.com/citations?user=-HCeb40AAAAJ&hl=en&oi=ao" class="google-scholar"><i class="bx bxs-graduation"></i></a>
           <a href="https://www.instagram.com/aren_dsouza77?igsh=M21pcnEzOW1sdXVp" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/in/aren-d-souza-0b522424a" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://orcid.org/0009-0008-4477-328X"
+             class="orcid"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="ORCID">
+            <svg class="orcid-logo" viewBox="0 0 40 40" role="img" aria-hidden="true">
+              <circle cx="20" cy="20" r="20" fill="#A6CE39"/>
+              <text x="20" y="27"
+                    text-anchor="middle"
+                    fill="#FFFFFF"
+                    font-family="Arial, Helvetica, sans-serif"
+                    font-size="17"
+                    font-weight="400"
+                    letter-spacing="-1">iD</text>
+            </svg>
+          </a>
         </div>
       </div>
       <nav id="navbar" class="nav-menu navbar">
@@ -542,13 +603,13 @@
              
       <div class="resume-item">
         <h4>Metaheuristic-Driven Hierarchical Summarization Framework for Radiological Reports Derived from the MIMIC_CXR Dataset</h4>
-        <h5 style="display: flex; justify-content: space-between; align-items: center;">25-09-2026
+        <h5 style="display: flex; justify-content: space-between; align-items: center;">2026
             <a href="https://doi.org/10.5220/0014535200005024" target="_blank"
             style="padding: 5px 10px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">
             Link
             </a>
         </h5>
-        <p><em>Published in the 1st International Conference on Computational and Cognitive Systems Science (ICCCSS 2025), SCITEPRESS, Google Scholar</em></p>
+        <p><em>Published in the 1st International Conference on Computational and Cognitive Systems Science (ICCCSS 2025), SCITEPRESS</em></p>
         <ul>
           <li>Metaheuristic-Driven Radiology Summarization – A novel framework for generating concise, coherent, and clinically meaningful summaries from radiological reports derived from the MIMIC_CXR dataset.</li>
           <li>Hierarchical Clustering-Based Organization – Groups semantically related sentences using contextual embeddings such as BioBERT and ClinicalBERT to preserve clinical context and the logical structure of radiology reports.</li>
